@@ -41,7 +41,6 @@ class TodoContainer extends React.Component {
   }
 
   delTodo = id => {
-    console.log('clicked',id);
     this.setState({
       todos: [
         ...this.state.todos.filter(todo => {
@@ -52,7 +51,6 @@ class TodoContainer extends React.Component {
   };
 
   addTodoItem = title => {
-    console.log(title);
     const newTodo = {
       id: uuidv4(),
       title: title,
